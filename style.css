@@ -5,7 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.socials {
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.socials i {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
 body {
   min-height: 100vh;
   background: linear-gradient(90deg, #bd0f4d 50%, #cb2964 50%) no-repeat center
@@ -51,6 +61,7 @@ a {
   letter-spacing: 0.3rem;
 }
 .model img {
+  position: fixed;
   border-radius: 50%;
   position: absolute;
   bottom: -40px;
