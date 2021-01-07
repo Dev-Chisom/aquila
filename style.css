@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #bd0f4d 50%, #cb2964 50%) no-repeat center
+    center/cover;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+.ml {
+  margin-left: 4rem;
+}
+.mr {
+  margin-right: 3rem;
+}
+.content {
+  position: relative;
+}
+.content h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 200;
+  margin: 1.5rem;
+  letter-spacing: 0.4rem;
+}
+.content .img-1 {
+  display: block;
+  margin: 3rem auto;
+  box-shadow: 10px 10px 2px 2px rgba(0, 0, 0, 0.3);
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.model img {
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  right: 40rem;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .ml {
+    margin-left: 0;
+  }
+  .mr {
+    margin-right: 0;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    letter-spacing: 0.2rem;
+  }
+  .content .img-1 {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+  a {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .model img {
+    bottom: -80px;
+    right: 15rem;
+    height: 70px;
+    width: 70px;
+  }
+  ul {
+    flex-direction: column;
+  }
+}
